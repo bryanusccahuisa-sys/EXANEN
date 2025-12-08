@@ -1,118 +1,81 @@
 <!DOCTYPE html>
-html>
+<html lang="es">
 <head>
- <title>Formulario de Contacto</title>
- <style>
- body {
- background-color: #f2f2f2;
- font-family: Arial, sans-serif;
- }
- 
- form {
- width: 50%;
- margin: 40px auto;
- padding: 20px;
- border: 1px solid #ccc;
- border-radius: 10px;
- box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
- }
- 
- label {
- display: block;
- margin-bottom: 10px;
- }
- 
- input[type="text"], input[type="email"], input[type="tel"] {
- width: 100%;
- height: 40px;
- margin-bottom: 20px;
- padding: 10px;
- border: 1px solid #ccc;
- border-radius: 5px;
- }
- 
- input[type="checkbox"] {
- margin-right: 10px;
- }
- 
- button[type="submit"] {
- background-color: #4CAF50;
- color: #fff;
- padding: 10px 20px;
- border: none;
- border-radius: 5px;
- cursor: pointer;
- }
- 
- button[type="submit"]:hover {
- background-color: #3e8e41;
- }
- </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TecnoLider</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
- <form>
- <label for="nombre">Nombre*</label>
- <input type="text" id="nombre" name="nombre" required>
 
- <label for="apellido">Apellido*</label>
- <input type="text" id="apellido" name="apellido" required>
+  <header class="encabezado">
+    <h1 class="logo">TecnoLider IESTP - Espinar 2025</h1>
+    <nav class="menu">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#ponentes">Ponentes</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#registro">Registro</a></li>
+      </ul>
+    </nav>
+  </header>
 
- <label for="email">Email*</label>
- <input type="email" id="email" name="email" required>
+  <section class="inicio">
+    <h1 class="titulo">El Futuro de la Tecnología Comienza Aquí</h1>
+    <p class="subtitulo">Explora innovación, IA, IoT y desarrollo sostenible</p>
+    <button class="boton">Inscríbete Ahora</button>
+  </section>
 
- <label for="telefono">Teléfono*</label>
- <input type="tel" id="telefono" name="telefono" required>
+  <section id="ponentes" class="ponentes">
+    <h2 class="titulo-seccion">Ponentes Destacados</h2>
+    <div class="tarjetas">
+      <div class="ponente">
+        <img src="https://picsum.photos/200" alt="Ponente 1">
+        <h3>Ing. Laura Quispe</h3>
+        <p>Especialista en Inteligencia Artificial</p>
+      </div>
+      <div class="ponente">
+        <img src="https://picsum.photos/201" alt="Ponente 2">
+        <h3>Mg. Juan Alvarez</h3>
+        <p>Docente de Desarrollo Web e IoT</p>
+      </div>
+      <div class="ponente">
+        <img src="https://picsum.photos/202" alt="Ponente 3">
+        <h3>Dr. Miguel Ramos</h3>
+        <p>Investigador en Cloud Computing</p>
+      </div>
+    </div>
+  </section>
 
- <label for="direccion">Dirección (opcional)</label>
- <input type="text" id="direccion" name="direccion">
+  <section id="agenda" class="agenda">
+    <h2 class="titulo-seccion">Agenda del Evento</h2>
+    <ul class="lista-agenda">
+      <li><span>09:00 a.m.</span> Inauguración y bienvenida</li>
+      <li><span>10:00 a.m.</span> Charla: El impacto del IoT en la educación</li>
+      <li><span>11:30 a.m.</span> Panel: Inteligencia Artificial Ética</li>
+      <li><span>02:00 p.m.</span> Taller: Creando tu primer sistema web</li>
+      <li><span>04:00 p.m.</span> Clausura y networking</li>
+    </ul>
+  </section>
 
- <label>
- <input type="checkbox" name="tipo" value="propietario">
- Propietario
- </label>
+  <section id="registro" class="registro">
+    <h2 class="titulo-seccion">Regístrate Gratis</h2>
+    <form class="formulario">
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <select>
+        <option value="">Selecciona tu perfil</option>
+        <option>Estudiante</option>
+        <option>Docente</option>
+        <option>Profesional TI</option>
+      </select>
+      <button type="submit" class="boton-form">Enviar</button>
+    </form>
+  </section>
 
- <label>
- <input type="checkbox" name="tipo" value="empresario">
- Empresario
- </label>
+  <footer class="pie">
+    <p>© 2025 TecnoLider 2025 Espinar – Organizado por IESTP Espinar</p>
+  </footer>
 
- <button type="submit">Enviar</button>
- </form>
 </body>
 </html>
-/* Estilos en un archivo .css o dentro de <style> */
-body {
-    background-color: #212529; /* Fondo oscuro */
-    color: white; /* Texto blanco */
-    font-family: Arial, sans-serif;
-    padding: 20px;
-}
-
-form {
-    background-color: #0b1a29; /* Fondo del formulario */
-    padding: 30px;
-    border-radius: 8px;
-    max-width: 600px;
-}
-
-input[type="text"], 
-input[type="email"] {
-    width: 100%; /* Ocupa todo el ancho */
-    padding: 10px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    background-color: #2c3e50; /* Fondo de campo oscuro */
-    color: white;
-    border: 1px solid #555;
-    border-radius: 4px;
-}
-
-input[type="submit"] {
-    background-color: #e7765c; /* Color naranja */
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 15px;
-}
