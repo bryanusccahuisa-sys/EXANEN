@@ -1,81 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TecnoLider</title>
-  <link rel="stylesheet" href="estilos.css">
-</head>
-<body>
-
-  <header class="encabezado">
-    <h1 class="logo">TecnoLider IESTP - Espinar 2025</h1>
-    <nav class="menu">
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#ponentes">Ponentes</a></li>
-        <li><a href="#agenda">Agenda</a></li>
-        <li><a href="#registro">Registro</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="inicio">
-    <h1 class="titulo">El Futuro de la Tecnología Comienza Aquí</h1>
-    <p class="subtitulo">Explora innovación, IA, IoT y desarrollo sostenible</p>
-    <button class="boton">Inscríbete Ahora</button>
-  </section>
-
-  <section id="ponentes" class="ponentes">
-    <h2 class="titulo-seccion">Ponentes Destacados</h2>
-    <div class="tarjetas">
-      <div class="ponente">
-        <img src="https://picsum.photos/200" alt="Ponente 1">
-        <h3>Ing. Laura Quispe</h3>
-        <p>Especialista en Inteligencia Artificial</p>
-      </div>
-      <div class="ponente">
-        <img src="https://picsum.photos/201" alt="Ponente 2">
-        <h3>Mg. Juan Alvarez</h3>
-        <p>Docente de Desarrollo Web e IoT</p>
-      </div>
-      <div class="ponente">
-        <img src="https://picsum.photos/202" alt="Ponente 3">
-        <h3>Dr. Miguel Ramos</h3>
-        <p>Investigador en Cloud Computing</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="agenda" class="agenda">
-    <h2 class="titulo-seccion">Agenda del Evento</h2>
-    <ul class="lista-agenda">
-      <li><span>09:00 a.m.</span> Inauguración y bienvenida</li>
-      <li><span>10:00 a.m.</span> Charla: El impacto del IoT en la educación</li>
-      <li><span>11:30 a.m.</span> Panel: Inteligencia Artificial Ética</li>
-      <li><span>02:00 p.m.</span> Taller: Creando tu primer sistema web</li>
-      <li><span>04:00 p.m.</span> Clausura y networking</li>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos DOM</title>
+  </head>
+  <body>
+    <h1 id="titulo">Hola Mundo</h1>
+    <button id="boton">Haz clic aquí</button>
+    <ul id="lista">
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
     </ul>
-  </section>
 
-  <section id="registro" class="registro">
-    <h2 class="titulo-seccion">Regístrate Gratis</h2>
-    <form class="formulario">
-      <input type="text" placeholder="Nombre completo" required>
-      <input type="email" placeholder="Correo electrónico" required>
-      <select>
-        <option value="">Selecciona tu perfil</option>
-        <option>Estudiante</option>
-        <option>Docente</option>
-        <option>Profesional TI</option>
-      </select>
-      <button type="submit" class="boton-form">Enviar</button>
+
+    <form id="contactoForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <button type="submit">Enviar</button>
     </form>
-  </section>
+    
 
-  <footer class="pie">
-    <p>© 2025 TecnoLider 2025 Espinar – Organizado por IESTP Espinar</p>
-  </footer>
-
-</body>
+  </body>
 </html>
